@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reserva de Cita</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <form action="reserva.php" method="post" class="formulario-reserva">
+            <div class="icono-fecha">🗓️</div>
+            <h2>Agenda tu Cita</h2>
+            <p>Selecciona el servicio y la fecha que prefieras.</p>
+
+            <div class="datos">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+             <div class="datos">
+                <label for="telefono">Número de Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+             <div class="datos">
+                <label for="servicio">Selecciona un Servicio</label>
+                <select name="servicio" id="servicio">
+                    <option value="" disabled selected>-- Elige una opción --</option>
+                    <option value="consulta-general">Consulta General</option>
+                    <option value="limpieza-dental">Limpieza Dental</option>
+                    <option value="terapia-fisica">Terapia Física</option>
+                    <option value="asesoria-legal">Asesoría Legal</option>
+                </select>
+            </div>
+
+            <div class="fecha-disponible">
+                <div class="datos">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="datos">
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+            </div>
+            <button type="submit" class="confirmar-reserva">Confirmar Reserva</button>
+        </form>
+    </div>
+</body>
+</html>

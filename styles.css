@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eef5f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #3c4858;
+}
+
+.contenedor-principal {
+    padding: 3rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 9px 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    text-align: center;
+}
+.icono-fecha {
+    font-size: 3rem;
+    line-height: 1rem;
+    margin-bottom: 2rem;
+}
+.formulario-reserva h2 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.formulario-reserva p {
+    color: #8492a6;
+    margin-bottom: 2px;
+}
+
+.datos {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.datos label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.datos input,
+.datos select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background: #f8fafc;
+    transition: border-color 0.3s ease;
+}
+
+.datos input:focus,
+.datos select:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+.fecha-disponible {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.fecha-disponible .datos {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.confirmar-reserva {
+    width: 100%;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.confirmar-reserva:hover {
+    background-color: #357abd;
+}
+
