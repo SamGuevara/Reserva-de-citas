@@ -28,8 +28,8 @@ Como tiene archivos PHP y está vinculado a MySQL vamos a:
 - Abre XAMPP, activa los servidores.
 - Ve al navegador, en la barra de URL coloca "http://localhost" (te lleva a la página principal de tu servidor local)
 - Busca "phpmyadmin"
-- Crea una base de datos con el nombre "registro_usuarios"
-- Una vez lista, selecciona "Importar"
+- Usaremos la base de datos "registro_usuarios" creada en otro proyecto, aca creamos una nueva tabla con la que se incluye en los archivos que descargaste
+- Selecciona "Importar"
 - Donde dice "Examinar", busca la ruta del archivo SQL que viene en la carpeta del proyecto
 - Baja hasta el final y click al botón "Importar"
 
